@@ -4,28 +4,119 @@ body {
     font-weight: lighter; !important;
 }
 
-.moon {
-  position: absolute;
-  height: 50vmin;
-  width: 50vmin;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0vmin 0vmin 25vmin 1vmin #fff;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 5%;
-}
+/*=====================================================
+=            Media Queries for Owl          =
+=====================================================*/
+@media only screen and (max-width : 2200px) {
 
 .message {
-  width: 100%;
-  text-align:center;
-  margin-top:23vmin;
-
+  width: 50%;
 }
 
 .message  h1{
+  margin-top: 9vmin;
+}
+
+.owl {
+  left: 25%;
+}
+
+.owl-background {
+  width: 50%;
+}
+
+.moon {
+  left: 25%;
+}
+
+.owlmenu {
+  display: block;
+}
+
+}
+
+@media only screen and (max-width : 767px) {
+
+.message {
+  width: 50%;
+}
+
+.message  h1{
+  margin-top: 9vmin;
+}
+
+.owl {
+  left: 25%;
+}
+
+.owl-background {
+  width: 50%;
+}
+
+.moon {
+  left: 25%;
+}
+
+.owlmenu {
+  display: block;
+}
+
+}
+
+@media only screen and (max-width : 480px) {
+
+.message {
+  width: 100%;
+}
+
+.message  h1{
+  margin-top: 25vmin;
+}
+
+.owl {
+  left: 50%;
+}
+
+.owl-background {
+  width: 100%;
+}
+
+.moon {
+  left: 50%;
+}
+
+.owlmenu {
+  display: none;
+}
+
+}
+
+
+.moon {
+  position: absolute;
+  height: 60vmin;
+  width: 60vmin;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0vmin 0vmin 25vmin 1vmin #fff;
+  top: 3%;
+  transform: translateX(-50%);
+}
+
+.message {
+  text-align:center;
+  display: inline-block;
+}
+
+.message  h1{
+  color: #3D6F8B;
+  font-size: 25vmin;
+  margin-bottom: -7vmin;
+}
+
+.message  h2{
   color: #fff;
-  font-size: 7vmin;
+  font-size: 8vmin;
 
 }
 
@@ -43,12 +134,12 @@ body {
 
 .owl-background {
   height: 50vmin;
-  width: 100%;
+  float:left;
+  display: inline-block;
 }
 
 .owl {
   position: absolute;
-  left: 50%;
   transform: translateX(-50%);
   top: 10%;
 }
@@ -147,11 +238,11 @@ body {
   z-index: 5;
   position: absolute;
   top: 91%;
-  left: -29vmin;
+  left: -39vmin;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 2vmin 0 2vmin 85vmin;
+  border-width: 2vmin 0 2vmin 105vmin;
   border-color: transparent transparent transparent #693E05;
 }
   
@@ -188,6 +279,7 @@ body {
   bottom: 25%;
   top: 26%;
   background: rgb(102, 102, 102);
+  border: 1px solid #FFCD66;
 }
 
 .eyelid {
@@ -618,4 +710,78 @@ body {
 
 .owl:hover  .eyelid{
     position: relative;	
+}
+
+.btndiv {
+ height:100px; 
+ margin-top:10px;
+ margin-bottom:10px;
+}
+
+.btnpop {
+  background: #3777c4;
+  position: relative;
+  padding: 15px 40px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 5px solid #1462BD;
+  color: white;
+  font-size: 25px;
+  vertical-align: middle;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  transition: all 0.1s;
+}
+.btnpop:hover { 
+  border-bottom: 5px solid #1462BD;
+  background: #4984cc;
+}
+.btnpop:active { 
+  top: 2px; 
+  border-bottom: 2px solid #1462BD;
+  background: #4984cc; 
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+
+.btnpop:focus {outline:0;}
+
+.owlmenu {
+  position: absolute;
+  width: 65vmin;
+  top: 65vmin;
+  left: -14vmin;
+}
+
+.owlmenu ul, .owlmenu li {
+	margin: 0;
+	padding: 0;
+}
+.owlmenu ul {
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+.owlmenu li {
+	position: relative;
+	width:auto;
+}
+.owlmenu a {
+	color: #FFFFFF;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 2vmin 4vmin;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+	float:left;
+}
+.owlmenu li:hover a {
+	background: #000000;
 }
