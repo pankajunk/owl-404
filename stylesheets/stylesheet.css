@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto',Helvetica,Arial,sans-serif !important;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif !important;
 	background-color: #275B76;
     font-weight: lighter; !important;
 }
@@ -10,11 +10,13 @@ body {
 @media only screen and (max-width : 2200px) {
 
 .message {
-  width: 50%;
+  width: 45%;
 }
 
 .message  h1{
-  margin-top: 9vmin;
+  margin-top: 7vmin;
+  font-size: 27vmin;
+  margin-bottom: -5vmin;
 }
 
 .owl {
@@ -31,6 +33,44 @@ body {
 
 .owlmenu {
   display: block;
+}
+
+.branch {
+  left: -39vmin;
+}
+
+}
+
+@media only screen and (max-width : 1100px) {
+
+.message {
+  width: 45%;
+}
+
+.message  h1{
+  margin-top: 7vmin;
+  font-size: 20vmin;
+  margin-bottom: -5vmin;
+}
+
+.owl {
+  left: 22%;
+}
+
+.owl-background {
+  width: 50%;
+}
+
+.moon {
+  left: 22%;
+}
+
+.owlmenu {
+  display: block;
+}
+
+.branch {
+  left: -59vmin;
 }
 
 }
@@ -38,39 +78,13 @@ body {
 @media only screen and (max-width : 767px) {
 
 .message {
-  width: 50%;
-}
-
-.message  h1{
-  margin-top: 9vmin;
-}
-
-.owl {
-  left: 25%;
-}
-
-.owl-background {
-  width: 50%;
-}
-
-.moon {
-  left: 25%;
-}
-
-.owlmenu {
-  display: block;
-}
-
-}
-
-@media only screen and (max-width : 480px) {
-
-.message {
   width: 100%;
 }
 
 .message  h1{
-  margin-top: 25vmin;
+  margin-top: 15vmin;
+  font-size: 27vmin;
+  margin-bottom: -5vmin;
 }
 
 .owl {
@@ -87,6 +101,44 @@ body {
 
 .owlmenu {
   display: none;
+}
+
+.branch {
+  left: -59vmin;
+}
+
+}
+
+@media only screen and (max-width : 480px) {
+
+.message {
+  width: 100%;
+}
+
+.message  h1{
+  margin-top: 25vmin;
+  font-size: 27vmin;
+  margin-bottom: -5vmin;
+}
+
+.owl {
+  left: 50%;
+}
+
+.owl-background {
+  width: 100%;
+}
+
+.moon {
+  left: 50%;
+}
+
+.owlmenu {
+  display: none;
+}
+
+.branch {
+  left: -59vmin;
 }
 
 }
@@ -109,14 +161,14 @@ body {
 }
 
 .message  h1{
-  color: #3D6F8B;
-  font-size: 25vmin;
-  margin-bottom: -7vmin;
+  font-family:ultra;
+  color: #FFCD66;
 }
 
 .message  h2{
   color: #fff;
-  font-size: 8vmin;
+  font-size: 7.5vmin;
+  font-weight:600;
 
 }
 
@@ -238,7 +290,6 @@ body {
   z-index: 5;
   position: absolute;
   top: 91%;
-  left: -39vmin;
   width: 0;
   height: 0;
   border-style: solid;
