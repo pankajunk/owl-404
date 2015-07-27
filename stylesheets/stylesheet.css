@@ -10,7 +10,7 @@ body {
 @media only screen and (max-width : 2200px) {
 
 .message {
-  width: 45%;
+  top: 60%;
 }
 
 .message  h1{
@@ -31,38 +31,12 @@ body {
   left: 25%;
 }
 
-.owlmenu {
-  display: block;
+.moon .left{
+  left: -60%;
 }
 
-.branch {
-  left: -39vmin;
-}
-
-}
-
-@media only screen and (max-width : 1100px) {
-
-.message {
-  width: 45%;
-}
-
-.message  h1{
-  margin-top: 7vmin;
-  font-size: 20vmin;
-  margin-bottom: -5vmin;
-}
-
-.owl {
-  left: 22%;
-}
-
-.owl-background {
-  width: 50%;
-}
-
-.moon {
-  left: 22%;
+.moon .right{
+  right: -60%;
 }
 
 .owlmenu {
@@ -70,55 +44,46 @@ body {
 }
 
 .branch {
-  left: -59vmin;
+  border-width: 2vmin 0 2vmin 105vmin;
 }
 
 }
 
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 795px) {
 
-.message {
-  width: 100%;
-}
 
-.message  h1{
-  margin-top: 15vmin;
-  font-size: 27vmin;
-  margin-bottom: -5vmin;
+.message  h2{
+  margin-top: 30px;
 }
 
 .owl {
   left: 50%;
 }
 
+.moon .left{
+  left: -35%;
+}
+
+.moon .right{
+  right: -35%;
+}
+
 .owl-background {
   width: 100%;
 }
 
-.moon {
-  left: 50%;
-}
-
-.owlmenu {
-  display: none;
-}
-
 .branch {
-  left: -59vmin;
+  border-width: 2vmin 0 2vmin 100vmin;
 }
+
 
 }
 
 @media only screen and (max-width : 480px) {
 
-.message {
-  width: 100%;
-}
 
-.message  h1{
-  margin-top: 25vmin;
-  font-size: 27vmin;
-  margin-bottom: -5vmin;
+.message  h2{
+  margin-top: -35px;
 }
 
 .owl {
@@ -129,8 +94,12 @@ body {
   width: 100%;
 }
 
-.moon {
-  left: 50%;
+.moon .left{
+  left: -30%;
+}
+
+.moon .right{
+  right: -30%;
 }
 
 .owlmenu {
@@ -151,13 +120,35 @@ body {
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0vmin 0vmin 25vmin 1vmin #fff;
-  top: 3%;
+  top: -.5%;
   transform: translateX(-50%);
+  left: 50%;
+}
+
+.moon .left {
+    position: absolute;
+    color: #DEDEDE;
+    font-family: ultra;
+    top: -5%;
+	z-index: 5;
+	font-size: 50vmin;
+}
+
+.moon .right {
+    position: absolute;
+    color: #DEDEDE;
+    font-family: ultra;
+    top: -5%;
+	z-index: 5;
+	font-size: 50vmin;
 }
 
 .message {
-  text-align:center;
-  display: inline-block;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
 }
 
 .message  h1{
@@ -169,11 +160,12 @@ body {
   color: #fff;
   font-size: 7.5vmin;
   font-weight:600;
+  margin-bottom:0px;
 
 }
 
 .message  p {
-  font-size: 3vmin;
+  font-size: 2.5vmin;
   color: #8B9DA6;
 }
 
@@ -185,15 +177,18 @@ body {
 
 
 .owl-background {
-  height: 50vmin;
-  float:left;
-  display: inline-block;
+    height: 50vmin;
+    display: inline-block;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
 }
 
 .owl {
   position: absolute;
   transform: translateX(-50%);
   top: 10%;
+  left: 50%;
 }
 
 .owl-body {
@@ -293,8 +288,9 @@ body {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 2vmin 0 2vmin 105vmin;
   border-color: transparent transparent transparent #693E05;
+  transform: translateX(-50%);
+  left: 50%;
 }
   
 .owleye {
@@ -766,7 +762,7 @@ body {
 .btndiv {
  height:100px; 
  margin-top:10px;
- margin-bottom:10px;
+ margin-bottom:0px;
 }
 
 .btnpop {
