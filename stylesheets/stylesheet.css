@@ -10,7 +10,7 @@ body {
 @media only screen and (max-width : 2200px) {
 
 .message {
-  top: 60%;
+  top: 55%;
 }
 
 .message  h1{
@@ -32,11 +32,11 @@ body {
 }
 
 .moon .left{
-  left: -60%;
+  left: -40%;
 }
 
 .moon .right{
-  right: -60%;
+  right: -40%;
 }
 
 .owlmenu {
@@ -61,11 +61,11 @@ body {
 }
 
 .moon .left{
-  left: -35%;
+  left: -40%;
 }
 
 .moon .right{
-  right: -35%;
+  right: -40%;
 }
 
 .owl-background {
@@ -83,7 +83,7 @@ body {
 
 
 .message  h2{
-  margin-top: -35px;
+  margin-top: -5px;
 }
 
 .owl {
@@ -95,11 +95,11 @@ body {
 }
 
 .moon .left{
-  left: -30%;
+  left: -40%;
 }
 
 .moon .right{
-  right: -30%;
+  right: -40%;
 }
 
 .owlmenu {
@@ -115,8 +115,8 @@ body {
 
 .moon {
   position: absolute;
-  height: 60vmin;
-  width: 60vmin;
+  height: 52vmin;
+  width: 52vmin;
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0vmin 0vmin 25vmin 1vmin #fff;
@@ -127,20 +127,20 @@ body {
 
 .moon .left {
     position: absolute;
-    color: #DEDEDE;
-    font-family: ultra;
-    top: -5%;
+    color: #fff;
+    font-family: rochester;
+    font-weight:600;
 	z-index: 5;
-	font-size: 50vmin;
+	font-size: 35vmin;
 }
 
 .moon .right {
     position: absolute;
-    color: #DEDEDE;
-    font-family: ultra;
-    top: -5%;
+    color: #fff;
+    font-family: rochester;
+	font-weight:600;
 	z-index: 5;
-	font-size: 50vmin;
+	font-size: 35vmin;
 }
 
 .message {
@@ -186,9 +186,13 @@ body {
 
 .owl {
   position: absolute;
-  transform: translateX(-50%);
-  top: 10%;
-  left: 50%;
+  top: 4%;
+  left: 48%;
+  transform: scale(0.9, 0.9) translateX(-50%);
+  -ms-transform: scale(0.9, 0.9) translateX(-50%); /* IE 9 */
+  -webkit-transform: scale(0.9, 0.9) translateX(-50%); /* Safari and Chrome */
+  -o-transform: scale(0.9, 0.9) translateX(-50%); /* Opera */
+  -moz-transform: scale(0.9, 0.9) translateX(-50%); /* Firefox */
 }
 
 .owl-body {
